@@ -1,0 +1,4 @@
+* `ImagePullBackOff` error when deploying a `-tools` image into another namespace.
+
+Example:
+`oc policy add-role-to-user system:image-puller system:serviceaccount:dgsbmb-dev:default -n dgsbmb-tools`
