@@ -2,3 +2,9 @@
 
 Example:
 `oc policy add-role-to-user system:image-puller system:serviceaccount:dgsbmb-dev:default -n dgsbmb-tools`
+
+* Authentication required for registry.redhat.io
+
+```bash
+oc -n dgsbmb-dev secret link default 3162188-postgis-xxx-pull-secret --for=pull
+```
